@@ -18,7 +18,8 @@ $sen1 = $_POST['sen1'];
 
 $strcon = mysqli_connect('127.0.0.1','sistema','123456','banco_teste') or die('Erro ao conectar ao banco de dados');
 $sql = "INSERT INTO cadastro_new VALUES ";
-$sql .= "(null,'$nome', '$cpf', '$nascimento' ,'$sexo', '$email', '$telefone' , '$cid' , '$setor' , '$fortaleza', '$estado', '$cep' ,'$sen1')"; 
+$sql .= "(null,'$nome', '$cpf', '$nascimento' ,'$sexo', '$email', '$telefone' , 
+            '$cid' , '$setor' , '$fortaleza', '$estado', '$cep' ,'$sen1')"; 
 
 mysqli_query($strcon,$sql) or die("Erro ao tentar cadastrar registro");
 mysqli_close($strcon);
