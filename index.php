@@ -63,7 +63,7 @@
                           Somos a última defesa que a <em> Humanidade </em> tem para se defender das maquinas.
                       </h4>
                         <br>
-                        <a href="cadastro-soldado.html" class="btn btn-lg mb-5 text-black" style="background-color:darkred; font-weight: 900;" > <em> Aliste-se!!! </em></a>
+                        <a href="cadastro-soldado.php" class="btn btn-lg mb-5 text-black" style="background-color:darkred; font-weight: 900;" > <em> Aliste-se!!! </em></a>
                     </div>
               </div>
 
