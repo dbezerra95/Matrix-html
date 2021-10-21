@@ -19,13 +19,34 @@ $sen1 = $_POST['sen1'];
 $strcon = mysqli_connect('127.0.0.1','sistema','123456','banco_teste') or die('Erro ao conectar ao banco de dados');
 $sql = "INSERT INTO cadastro_new VALUES ";
 $sql .= "(null,'$nome', '$cpf', '$nascimento' ,'$sexo', '$email', '$telefone' , 
-            '$cid' , '$setor' , '$fortaleza', '$estado', '$cep' ,'$sen1')"; 
+            '$cid' , '$setor' , '$fortaleza', '$estado', '$cep' ,'$sen1')";
 
 mysqli_query($strcon,$sql) or die("Erro ao tentar cadastrar registro");
 mysqli_close($strcon);
 
-echo "Cliente cadastrado com sucesso!";
-echo "<a href='formulario.html'>Clique aqui para realizar um novo cadastro</a><br>";
-echo "<a href='consulta.php'>Clique aqui para realizar uma consulta</a><br>";
+
+function buscar_tarefas($strcon){
+    $sqlBusca = 'SELECT * FROM armamento'; //Consulta SQL
+    $resultado = mysqli_query($strcon,$sqlBusca); // Função que executa a requisição 
+
+}
 
 ?>
+
+<html style="background-color: black;">
+    <header style="background-color: green;">
+        <div style="font-size: 25px ;">
+            <?php
+            echo "Cliente cadastrado com sucesso!";
+            echo "<a href='cadastro-ia.php'><br>Clique aqui para realizar um novo cadastro</a><br>";
+            echo "<a href='index.php'>Clique aqui para ir para pagina principal. </a><br>";
+            ?>
+        </div>
+    </header>
+
+
+    <canvas id="c"></canvas>
+    <script src="script.js"></script>
+    <script src="script.js"></script>
+    <script src="script.js"></script>
+</html>

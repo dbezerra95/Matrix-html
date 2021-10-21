@@ -58,13 +58,13 @@
 
         <section class="row mx-5 mt-3 p-3 mb-3 rounded">
 
-            <form name="Cadastro" action="cadastrar.php" method="POST">
+            <form name="CadastroIA" action="cadastrarIA.php" method="POST">
 
-                <h4 class="mb-3">Dados Pessoais</h4>
+                <h4 class="mb-3">Dados Maquina</h4>
 
                 <div class="col mb-3">
 
-                    <label for="nome" class="form-label">Nome Completo:</label>
+                    <label for="nome" class="form-label">Nome Maquina:</label>
                     <input type="text" class="form-control" id="NomeCliente" name="NomeCliente" placeholder="Digite o nome completo" required>
 
                 </div>
@@ -73,77 +73,29 @@
 
                     <div class="col-lg-4 col-sm-12 mb-3">
 
-                        <label for="cpf" class="form-label">CPF:</label>
-                        <input type="text" class="form-control" id="cpf" name="cpf" maxlength="11" placeholder="Somente números" required>
+                        <label for="cpf" class="form-label">Codigo Maquina:</label>
+                        <input type="text" class="form-control" id="cpf" name="cpf" maxlength="11" placeholder="Somente números ( Digitos 11)" required>
 
                     </div>
 
                     <div class="col-lg-4 col-sm-12 mb-3">
 
-                        <label for="nascimento" class="form-label">Data de Nascimento:</label>
+                        <label for="nascimento" class="form-label">Nascimento da Maquina:</label>
                         <input type="date" class="form-control" id="nascimento" name="nascimento" required>
 
                     </div>
 
-                    <div class="col-lg-4 col-sm-12 mb-3">
 
-                        <label for="sexo" class="form-label">Sexo:</label>
+                    <div class="row mb-3">
 
-                        <select class="form-select" id="sexo" name="sexo" required>
+                        <div class="col-lg-4 col-sm-12 mb-3">
 
-                            <option value="0" selected>Selecione uma opção</option>
-                            <option value="Masculino">Masculino</option>
-                            <option value="Feminino">Feminino</option>
+                            <label for="setor" class="form-label">Setor:</label>
+                            <input type="text" class="form-control" id="setor" name="setor" placeholder="Setor" required>
 
-                        </select>
-                </div>
-
-
-                <div class="row mb-3">
-
-                    <div class="col-lg-6 col-sm-12 mb-3">
-
-                        <label for="email" class="form-label">E-mail:</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="nome@dominio.com" required>
+                        </div>
 
                     </div>
-
-                    <div class="col-lg-6 col-sm-12 mb-3">
-
-                        <label for="telefone" class="form-label">Telefone:</label>
-                        <input type="tel" class="form-control" id="telefone" name="telefone" maxlength="11" placeholder="Somente numeros mais o DDD" required>
-
-                    </div>
-
-                </div>
-
-                <h4 class="mb-3">Cidadela</h4>
-
-                <div class="col mb-3">
-
-                    <label for="cid" class="form-label">Cidadela:</label>
-                    <input type="text" class="form-control" id="cid" name="cid" placeholder="Digite sua Cidadela" required>
-
-                </div>
-
-
-                <div class="row mb-3">
-
-                    <div class="col-lg-4 col-sm-12 mb-3">
-
-                        <label for="setor" class="form-label">Setor:</label>
-                        <input type="text" class="form-control" id="setor" name="setor" placeholder="Setor" required>
-
-                    </div>
-
-                    <div class="col-lg-4 col-sm-12 mb-3">
-
-                        <label for="fortaleza" class="form-label">Fortaleza:</label>
-                        <input type="text" class="form-control" id="fortaleza" name="fortaleza" placeholder=" Informe Fortaleza" required>
-
-                    </div>
-
-                </div>
 
                 <div class="row mb-3">
 
@@ -183,47 +135,12 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6 col-sm-12 mb-3">
-
-                    <label for="cep" class="form-label">CEP:</label>
-                    <input type="text" class="form-control" id="cep" name="cep" maxlength="8" placeholder="Somente números" required>
-
-                </div>
-
                 <!-- Senha -->
-
-                </h4>
-                <div class="row mb-3">
-
-                    <div class="col-lg-6 col-sm-12 mb-3">
-
-                        <label for="sen1" class="form-label">Senha:</label>
-                        <input type="password" class="form-control" id="sen1" name="sen1" required>
-
-                    </div>
-
-                    <div class="col-lg-6 col-sm-12 mb-3">
-
-                        <label for="sen2" class="form-label">Confirme a senha:</label>
-                        <input type="password" class="form-control" id="sen2" name="sen2" required>
-
-                    </div>
-
-                </div>
 
                 <div class="row">
 
                     <div class="col-lg-2 col-sm-12 mb-3">
                         <input type="submit" value="Cadastrar" id="enviar" class="btn btn-primary btn-lg">
-                    </div>
-
-                    <div class="col-lg-10 col-sm-12 mb-3 form-check">
-                        <input type="checkbox" name="termos" id="termos" class="form-check-input" required>
-                        <label for="termos" class="form-check-label">
-                            <a href="termo-privacidade.html" target="_blank">Termos de Privacidade</a> |
-                            <a href="termo-de-uso.html" target="_blank">Termos de Uso</a>
-                        </label>
-
                     </div>
 
                 </div>
