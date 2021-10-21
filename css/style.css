@@ -82,7 +82,7 @@ canvas {
     display: block;
     z-index: -1;
     top: 0;
-    position:absolute;
+    position:fixed;
 }
 
 #color {
